@@ -1,9 +1,11 @@
 # dirtypulls-web
 
-Mock e-shopu Dirty Pulls (Pokémon TCG, Magic: The Gathering, Disney Lorcana, příslušenství Ultra PRO) – statický web na GitHub Pages, doména dirtypulls.cz.
+Ukázkový web e-shopu Dirty Pulls (Pokémon TCG, Magic: The Gathering, Disney Lorcana, příslušenství Ultra PRO). Statický web na GitHub Pages, doména dirtypulls.cz.
 
-- `assets/data.js` – kategorie a produkty (upravuj tady)
-- `assets/app.js` – vykreslení stránek a košík (jen v prohlížeči)
-- `assets/style.css` – vzhled podle šablony z Upgates
+## Úpravy
+- **Produkty a ceny:** `assets/data.js`
+- **Fotky produktů:** nahraj obrázek do `assets/img/` (např. `assets/img/pkm-30th-etb.jpg`) a u produktu v `data.js` doplň `img: "assets/img/pkm-30th-etb.jpg"`. Bez fotky se zobrazí vygenerovaná karta.
+- **Vzhled:** `assets/style.css`, **logika:** `assets/app.js`
+- **Info stránky:** `kontakt.html`, `doprava-a-platba.html`, `reklamacni-rad.html`, `ochrana-osobnich-udaju.html`
 
-Objednávky nejsou funkční – jde o ukázku.
+Bez cookies a analytiky, písma jsou uložená lokálně. Objednávky nejsou funkční.
