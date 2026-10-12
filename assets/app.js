@@ -125,7 +125,7 @@
     if (p.img) return `<div class="art photo ${size || ""}"><img src="${esc(p.img)}" alt="${esc(p.name)}" loading="lazy"></div>`;
     return `<div class="art art-${p.cat} ${size || ""}" role="img" aria-label="${esc(p.name)}">
       <div class="art-glow"></div>
-      <div class="art-card"><span class="art-l">${esc(p.label)}</span><span class="art-s">${esc(p.sub)}</span></div>
+      ${window.DP_ART(p)}
       <span class="art-foot">${esc(cat.name.toUpperCase())}</span>
     </div>`;
   }
