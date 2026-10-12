@@ -112,6 +112,7 @@
             <h4>Provozovatel</h4>
             <span>Radek Šedina</span>
             <span>Doubravčice, Česká republika</span>
+            <a href="mailto:info@dirtypulls.cz">info@dirtypulls.cz</a>
             <a href="${IG}" target="_blank" rel="noopener">Instagram @dirtypulls.cz</a>
           </div>
         </div>
