@@ -1,0 +1,3 @@
+ERR https://www.cardmarket.com/en/Pokemon/Products/Booster-Boxes/Destined-Rivals-Booster-Box?language=1 HTTP Error 403: Forbidden
+ERR https://www.cardmarket.com/en/Pokemon/Products/Box-Sets/30th-Celebration-Mewtwo-Figure-Collection?language=1 HTTP Error 403: Forbidden
+ERR https://www.cardmarket.com/en/Pokemon/Products/Blisters/30th-Celebration-Eevee-2-Pack-Blister?language=1 HTTP Error 403: Forbidden
