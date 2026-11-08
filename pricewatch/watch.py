@@ -213,8 +213,19 @@ def main():
         w.writeheader()
         for r in old + rows:
             w.writerow({k: r.get(k, "") for k in fields})
+    old_alerts = []
+    try:
+        old = json.loads((HERE / "latest.json").read_text())
+        if old.get("date") != today:
+            old_alerts = old.get("alerts", [])
+        else:
+            old_alerts = old.get("prev_alerts", [])
+    except Exception:
+        pass
+    key = lambda a: re.sub(r"[\d\s.,+%()→€Kč-]+", "", a)  # stejné upozornění i při drobné změně čísel
+    new_alerts = [a for a in alerts if key(a) not in {key(o) for o in old_alerts}]
     (HERE / "latest.json").write_text(json.dumps(
-        {"date": today, "eur_czk": rate, "rows": rows, "alerts": alerts, "competitors": comp_all,
+        {"new_alerts": new_alerts, "prev_alerts": old_alerts, "date": today, "eur_czk": rate, "rows": rows, "alerts": alerts, "competitors": comp_all,
          "unresolved": [p["code"] for p, _ in unresolved]}, ensure_ascii=False, indent=1))
     (HERE / "report.md").write_text("\n".join(report) + "\n")
     print("\n".join(report))
