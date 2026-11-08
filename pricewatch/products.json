@@ -6,25 +6,42 @@
       "code": "EN-DRI-BB",
       "name": "Destined Rivals Booster Box (EN)",
       "shop_url": "https://827216.myshoptet.com/destined-rivals-booster-box-en/",
-      "cm_id": null,
-      "cm_match": ["destined rivals", "booster box"],
-      "cm_exclude": ["case", "display case", "japanese"]
+      "cm_id": 818574,
+      "cm_match": [
+        "destined rivals",
+        "booster box"
+      ],
+      "cm_exclude": [
+        "case",
+        "display case",
+        "japanese"
+      ]
     },
     {
-      "code": "EN-30TH-2PK",
-      "name": "30th Celebration 2-Pack Blister (EN)",
+      "code": "EN-30TH-2PB",
+      "name": "30th Celebration 2-Pack Blister – Eevee (EN)",
       "shop_url": "https://827216.myshoptet.com/30th-celebration-2-pack-blister-en/",
-      "cm_id": null,
-      "cm_match": ["30th", "blister"],
-      "cm_exclude": ["case"]
+      "cm_id": 895556,
+      "cm_match": [
+        "30th",
+        "blister"
+      ],
+      "cm_exclude": [
+        "case"
+      ]
     },
     {
       "code": "EN-30TH-FIG-B",
       "name": "30th Celebration Figure Collection – Mewtwo (EN)",
       "shop_url": "https://827216.myshoptet.com/30th-celebration-figure-collection-mewtwo-en/",
-      "cm_id": null,
-      "cm_match": ["30th", "mewtwo"],
-      "cm_exclude": ["case"]
+      "cm_id": 895575,
+      "cm_match": [
+        "30th",
+        "mewtwo"
+      ],
+      "cm_exclude": [
+        "case"
+      ]
     }
   ]
 }
