@@ -75,7 +75,14 @@ def page_offer(url):
         except ValueError:
             pass
     av = re.search(r'schema\.org/(InStock|OutOfStock|PreOrder|BackOrder|SoldOut|Discontinued|LimitedAvailability)', h)
-    return price, (av.group(1) if av else None)
+    av = av.group(1) if av else None
+    if not av:
+        t = strip(h).lower()
+        if re.search(r"vyprodán|nedostupn|není skladem|out of stock", t):
+            av = "OutOfStock"
+        elif re.search(r"skladem|in stock", t):
+            av = "InStock"
+    return price, av
 
 
 def strip(s):
@@ -87,6 +94,11 @@ def competitors(p, shops):
     inc = [w.lower() for w in p.get("comp_match", p.get("cm_match", []))]
     exc = [w.lower() for w in p.get("comp_exclude", [])] + ["japan", "japon", " jp", "(jp)", "korej", "čín", "chines"]
     offers = []
+    for fx in p.get("comp_urls", []):
+        time.sleep(1)
+        price, av = page_offer(fx["url"])
+        if price and price >= p.get("comp_min_price", 0):
+            offers.append({"shop": fx["shop"], "url": fx["url"], "price": price, "availability": av})
     for s in shops:
         q = urllib.parse.quote(p.get("comp_query", " ".join(inc)))
         try:

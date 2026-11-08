@@ -34,7 +34,13 @@
         "sleeved",
         "japan"
       ],
-      "comp_min_price": 3000
+      "comp_min_price": 3000,
+      "comp_urls": [
+        {
+          "shop": "Veselý drak",
+          "url": "https://www.vesely-drak.cz/produkty/destined-rivals/"
+        }
+      ]
     },
     {
       "code": "EN-30TH-2PB",
@@ -81,7 +87,13 @@
         "case",
         "tin"
       ],
-      "comp_min_price": 900
+      "comp_min_price": 900,
+      "comp_urls": [
+        {
+          "shop": "Veselý drak",
+          "url": "https://www.vesely-drak.cz/produkty/specialni-sety/19150-pokemon-30th-celebration-mewtwo-figure-collection/"
+        }
+      ]
     }
   ]
 }

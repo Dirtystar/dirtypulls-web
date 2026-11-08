@@ -16,6 +16,27 @@
     {
       "name": "Veselý drak",
       "search": "https://www.vesely-drak.cz/produkty/vyhledavani/?hledat={q}"
+    },
+    {
+      "name": "OFS Cards",
+      "search": "https://ofscards.com/?s={q}&post_type=product"
+    },
+    {
+      "name": "Masterball",
+      "search": "https://www.masterball.cz/search?q={q}"
     }
-  ]
+  ],
+  "webfetch_only": {
+    "_info": "Tyto e-shopy blokují GitHub (403). Kontroluje je pondělní přehled přes WebFetch.",
+    "EN-30TH-FIG-B": [
+      "https://www.professoronyx.com/30th-celebration-mewtwo-figure-collection-1ks-na-zakaznika/",
+      "https://www.chytjevsechny-poke.cz/pokemon-tcg--30th-celebration-figure-collection-mewtwo/",
+      "https://www.cdmc.cz/premiove-kolekce/pokemon-tcg--30th-celebration-mewtwo-figure-collection/"
+    ],
+    "EN-DRI-BB": [
+      "https://www.bulbazard.cz/pokemon-tcg-destined-rivals-booster-box/",
+      "https://www.pokemall.cz/kategorie/destined-rivals/"
+    ],
+    "EN-30TH-2PB": []
+  }
 }
