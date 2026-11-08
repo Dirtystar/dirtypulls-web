@@ -6,7 +6,7 @@ Výstupy (v adresáři pricewatch/):
   latest.json  – poslední stav (čte ho dashboard a ranní souhrn)
   report.md    – čitelný přehled + kandidáti pro produkty bez cm_id
 """
-import csv, datetime as dt, json, re, sys, urllib.request
+import csv, datetime as dt, json, re, sys, time, urllib.parse, urllib.request
 from pathlib import Path
 
 HERE = Path(__file__).parent
@@ -59,8 +59,65 @@ def match(products, p):
     return out
 
 
+def page_offer(url):
+    """Cena + skladovost z produktové stránky (schema.org microdata / JSON-LD)."""
+    try:
+        h = get(url, False)
+    except Exception:
+        return None, None
+    price = None
+    m = re.search(r'itemprop="price"[^>]*content="([\d.,]+)"', h) or \
+        re.search(r'content="([\d.,]+)"[^>]*itemprop="price"', h) or \
+        re.search(r'"price"\s*:\s*"?([\d.]+)', h)
+    if m:
+        try:
+            price = float(m.group(1).replace(",", "."))
+        except ValueError:
+            pass
+    av = re.search(r'schema\.org/(InStock|OutOfStock|PreOrder|BackOrder|SoldOut|Discontinued|LimitedAvailability)', h)
+    return price, (av.group(1) if av else None)
+
+
+def strip(s):
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", s)).strip()
+
+
+def competitors(p, shops):
+    """Vyhledá produkt u konkurence, vrátí nabídky skladem."""
+    inc = [w.lower() for w in p.get("comp_match", p.get("cm_match", []))]
+    exc = [w.lower() for w in p.get("comp_exclude", [])] + ["japan", "japon", " jp", "(jp)", "korej", "čín", "chines"]
+    offers = []
+    for s in shops:
+        q = urllib.parse.quote(p.get("comp_query", " ".join(inc)))
+        try:
+            h = get(s["search"].format(q=q), False)
+        except Exception as e:
+            print("search selhal", s["name"], e, file=sys.stderr)
+            continue
+        base = re.match(r"https?://[^/]+", s["search"]).group(0)
+        seen = []
+        for href, txt in re.findall(r'<a[^>]+href="([^"#]+)"[^>]*>(.*?)</a>', h, re.S):
+            name = strip(txt)
+            n = " " + name.lower() + " "
+            if len(name) < 8 or not all(w in n for w in inc) or any(w in n for w in exc):
+                continue
+            url = href if href.startswith("http") else base + href
+            if url in seen or not url.startswith(base):
+                continue
+            seen.append(url)
+            if len(seen) > 4:
+                break
+        for url in seen:
+            time.sleep(1)
+            price, av = page_offer(url)
+            offers.append({"shop": s["name"], "url": url, "price": price, "availability": av})
+    return offers
+
+
 def main():
     cfg = json.loads((HERE / "products.json").read_text())
+    shops = json.loads((HERE / "competitors.json").read_text())["shops"]
+    comp_all = {}
     guide = get(GUIDE)
     cat = get(NONSINGLES)
     prices = {g["idProduct"]: g for g in guide["priceGuides"]}
@@ -101,8 +158,17 @@ def main():
             "low_czk": czk(low) or "", "trend_czk": czk(trend) or "", "my_czk": mine or "",
             "diff_vs_trend_pct": round(diff, 1) if diff is not None else "",
         }
-        rows.append(row)
         fmt = lambda v: f"{v:,.0f} Kč".replace(",", " ") if v else "–"
+        offs = competitors(p, shops)
+        comp_all[p["code"]] = offs
+        instock = [o for o in offs if o["availability"] in ("InStock", "LimitedAvailability") and o["price"]]
+        best = min(instock, key=lambda o: o["price"]) if instock else None
+        row["comp_min_czk"] = best["price"] if best else ""
+        row["comp_min_shop"] = best["shop"] if best else ""
+        row["comp_instock_count"] = len(instock)
+        if best and mine and best["price"] < mine * (1 - cfg.get("alert_pct", 5) / 100):
+            alerts.append(f"{p['name']}: {best['shop']} má skladem za {fmt(best['price'])}, já {fmt(mine)} ({(best['price']/mine-1)*100:+.0f} %)")
+        rows.append(row)
         report.append(f"| {p['name']} | {fmt(mine)} | {fmt(czk(low))} | {fmt(czk(trend))} | {fmt(czk(avg7))} | "
                       f"{(f'{diff:+.0f} %') if diff is not None else '–'} |")
         # alerty: pohyb trendu oproti minulému běhu
@@ -114,6 +180,16 @@ def main():
         if mine and low and mine < czk(low):
             alerts.append(f"{p['name']}: můj e-shop ({fmt(mine)}) je pod CM low ({fmt(czk(low))}) – možná moc levně")
 
+    report.append("\n## Konkurence (jen skladem)\n")
+    for p in cfg["products"]:
+        offs = sorted([o for o in comp_all.get(p["code"], []) if o["price"]], key=lambda o: o["price"])
+        report.append(f"**{p['name']}**")
+        if not offs:
+            report.append("- nic nenalezeno")
+        for o in offs:
+            mark = "✅ skladem" if o["availability"] in ("InStock", "LimitedAvailability") else f"✖ {o['availability'] or '?'}"
+            report.append(f"- {o['shop']}: {o['price']:,.0f} Kč – {mark} – {o['url']}".replace(",", " "))
+        report.append("")
     if alerts:
         report.append("\n## Upozornění\n" + "\n".join(f"- {a}" for a in alerts))
     unresolved = [(p, c) for p, c in candidates if len(c) != 1]
@@ -136,7 +212,7 @@ def main():
         for r in old + rows:
             w.writerow({k: r.get(k, "") for k in fields})
     (HERE / "latest.json").write_text(json.dumps(
-        {"date": today, "eur_czk": rate, "rows": rows, "alerts": alerts,
+        {"date": today, "eur_czk": rate, "rows": rows, "alerts": alerts, "competitors": comp_all,
          "unresolved": [p["code"] for p, _ in unresolved]}, ensure_ascii=False, indent=1))
     (HERE / "report.md").write_text("\n".join(report) + "\n")
     print("\n".join(report))

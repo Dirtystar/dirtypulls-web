@@ -7,7 +7,7 @@ on:
     paths:
       - "pricewatch/products.json"
       - "pricewatch/watch.py"
-      - "pricewatch/probe.py"
+      - "pricewatch/competitors.json"
 permissions:
   contents: write
 jobs:
@@ -18,12 +18,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python pricewatch/probe.py || true
       - run: python pricewatch/watch.py
       - name: Commit výsledků
         run: |
           git config user.name "pricewatch-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add -f pricewatch/probe.txt 2>/dev/null; git add pricewatch/history.csv pricewatch/latest.json pricewatch/report.md
+          git add pricewatch/history.csv pricewatch/latest.json pricewatch/report.md
           git diff --cached --quiet || git commit -m "pricewatch $(date -u +%F)"
           git pull --rebase && git push

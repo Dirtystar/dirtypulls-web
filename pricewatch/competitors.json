@@ -1,0 +1,21 @@
+{
+  "_info": "Konkurenční e-shopy. search = URL vyhledávání, {q} = hledaný text.",
+  "shops": [
+    {
+      "name": "Pokeshop",
+      "search": "https://www.pokeshop.cz/vyhledavani/?string={q}"
+    },
+    {
+      "name": "Cardstore",
+      "search": "https://www.cardstore.cz/vyhledavani/?string={q}"
+    },
+    {
+      "name": "Shadowball",
+      "search": "https://www.shadowball.cz/vyhledavani/?string={q}"
+    },
+    {
+      "name": "Veselý drak",
+      "search": "https://www.vesely-drak.cz/produkty/vyhledavani/?hledat={q}"
+    }
+  ]
+}

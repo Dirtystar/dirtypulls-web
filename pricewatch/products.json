@@ -15,6 +15,23 @@
         "case",
         "display case",
         "japanese"
+      ],
+      "comp_query": "destined rivals booster box",
+      "comp_match": [
+        "destined rivals",
+        "box"
+      ],
+      "comp_exclude": [
+        "case",
+        "half",
+        "mini",
+        "build",
+        "elite",
+        "etb",
+        "bundle",
+        "3-pack",
+        "blister",
+        "tin"
       ]
     },
     {
@@ -28,6 +45,16 @@
       ],
       "cm_exclude": [
         "case"
+      ],
+      "comp_query": "30th celebration blister",
+      "comp_match": [
+        "30th",
+        "blister"
+      ],
+      "comp_exclude": [
+        "case",
+        "coin",
+        "mince"
       ]
     },
     {
@@ -41,6 +68,15 @@
       ],
       "cm_exclude": [
         "case"
+      ],
+      "comp_query": "30th celebration mewtwo",
+      "comp_match": [
+        "mewtwo",
+        "figur"
+      ],
+      "comp_exclude": [
+        "case",
+        "tin"
       ]
     }
   ]
