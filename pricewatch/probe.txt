@@ -1,0 +1,15 @@
+## https://www.cernyrytir.cz/ -> 200 https://cernyrytir.cz/ len=4968 shoptet=False
+  forms: []
+## https://www.pokeshop.cz/ -> 200 https://www.pokeshop.cz/ len=148132 shoptet=True
+  forms: ["/action/Customer/Login/ ['referer', 'email', 'password', 'surname']", "/action/ProductSearch/prepareString/ ['language', 'string']", "/action/Cart/addCartItem/ ['language', 'priceId', 'productId', 'amount']", "/action/Cart/addCartItem/ ['language', 'priceId', 'productId', 'amount']", "/action/Cart/addCartItem/ ['language', 'priceId', 'productId', 'amount']", "/action/Cart/addCartItem/ ['language', 'priceId', 'productId', 'amount']"]
+## https://www.najada.games/ -> 200 https://www.najada.games/en len=808669 shoptet=False
+  forms: []
+## https://www.masterball.cz/ -> 200 https://www.masterball.cz/ len=2415714 shoptet=False
+  forms: []
+## https://www.cardstore.cz/ -> 200 https://www.cardstore.cz/ len=379414 shoptet=True
+  forms: ["/action/Customer/Login/ ['referer', 'email', 'password', 'surname']", "/action/ProductSearch/prepareString/ ['language', 'string']", "/action/Cart/addCartItem/ ['language', 'priceId', 'productId', 'amount']", "/action/Cart/addCartItem/ ['language', 'priceId', 'productId', 'amount']", "/action/Cart/addCartItem/ ['language', 'priceId', 'productId', 'amount']", "/action/Cart/addCartItem/ ['language', 'priceId', 'productId', 'amount']"]
+## https://www.chytjevsechny.cz/ ERR HTTP Error 404: Not Found
+## https://www.shadowball.cz/ -> 200 https://www.shadowball.cz/ len=153985 shoptet=True
+  forms: ["/action/Customer/Login/ ['referer', 'email', 'password', 'surname']", "/action/Cart/addCartItem/ ['language', 'priceId', 'productId', 'amount']", "/action/ProductSearch/prepareString/ ['language', 'string']", "/action/MailForm/subscribeToNewsletters/ ['formId', 'surname', 'email', 'captcha', 'consents[]']"]
+## https://www.vesely-drak.cz/ -> 200 https://www.vesely-drak.cz/ len=144859 shoptet=False
+  forms: ["/hledat.php ['hledat']", "/hledat.php ['hledat']"]
