@@ -1,0 +1,54 @@
+{
+ "date": "2026-11-08",
+ "eur_czk": 24.345,
+ "rows": [
+  {
+   "date": "2026-11-08",
+   "code": "EN-DRI-BB",
+   "name": "Destined Rivals Booster Box (EN)",
+   "cm_id": "",
+   "cm_name": "",
+   "low_eur": "",
+   "trend_eur": "",
+   "avg7_eur": "",
+   "low_czk": "",
+   "trend_czk": "",
+   "my_czk": 8999.0,
+   "diff_vs_trend_pct": ""
+  },
+  {
+   "date": "2026-11-08",
+   "code": "EN-30TH-2PK",
+   "name": "30th Celebration 2-Pack Blister (EN)",
+   "cm_id": "",
+   "cm_name": "",
+   "low_eur": "",
+   "trend_eur": "",
+   "avg7_eur": "",
+   "low_czk": "",
+   "trend_czk": "",
+   "my_czk": 749.0,
+   "diff_vs_trend_pct": ""
+  },
+  {
+   "date": "2026-11-08",
+   "code": "EN-30TH-FIG-B",
+   "name": "30th Celebration Figure Collection – Mewtwo (EN)",
+   "cm_id": "",
+   "cm_name": "",
+   "low_eur": "",
+   "trend_eur": "",
+   "avg7_eur": "",
+   "low_czk": "",
+   "trend_czk": "",
+   "my_czk": 1940.0,
+   "diff_vs_trend_pct": ""
+  }
+ ],
+ "alerts": [],
+ "unresolved": [
+  "EN-DRI-BB",
+  "EN-30TH-2PK",
+  "EN-30TH-FIG-B"
+ ]
+}
