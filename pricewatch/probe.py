@@ -1,23 +1,27 @@
 import urllib.request, urllib.parse, re
 H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36",
      "Accept-Language": "cs,en;q=0.8", "Accept": "text/html"}
-shops = ["https://www.cernyrytir.cz/", "https://www.pokeshop.cz/", "https://www.najada.games/", "https://www.masterball.cz/",
-         "https://www.cardstore.cz/", "https://www.chytjevsechny.cz/", "https://www.shadowball.cz/", "https://www.vesely-drak.cz/"]
+q = "destined rivals"
+urls = [
+ "https://www.pokeshop.cz/vyhledavani/?string=" + urllib.parse.quote(q),
+ "https://www.vesely-drak.cz/hledat.php?hledat=" + urllib.parse.quote(q),
+ "https://www.najada.games/cs/search?q=" + urllib.parse.quote(q),
+ "https://www.masterball.cz/vyhledavani?q=" + urllib.parse.quote(q),
+ "https://cernyrytir.cz/",
+]
 out = []
-def get(u):
-    r = urllib.request.urlopen(urllib.request.Request(u, headers=H), timeout=30)
-    return r.status, r.geturl(), r.read().decode("utf-8", "replace")
-for s in shops:
+for u in urls:
     try:
-        st, url, h = get(s)
-        forms = re.findall(r'<form[^>]*action="([^"]*)"[^>]*>(.*?)</form>', h, re.S)
-        fs = []
-        for a, body in forms[:6]:
-            names = re.findall(r'<input[^>]*name="([^"]+)"', body)
-            fs.append(f"{a} {names[:5]}")
-        shoptet = "shoptet" in h.lower()
-        out.append(f"## {s} -> {st} {url} len={len(h)} shoptet={shoptet}\n  forms: {fs}")
+        r = urllib.request.urlopen(urllib.request.Request(u, headers=H), timeout=30)
+        h = r.read().decode("utf-8", "replace")
+        out.append(f"## {u} -> {r.status} {r.geturl()} len={len(h)}")
+        if "cernyrytir" in u:
+            out.append(h[:3000])
+            continue
+        for m in list(re.finditer(r"(?i)destined rivals", h))[:3]:
+            s = h[max(0, m.start()-600): m.end()+1500]
+            s = re.sub(r"\s+", " ", s)
+            out.append("  ...> " + s[:2100])
     except Exception as e:
-        out.append(f"## {s} ERR {e}")
+        out.append(f"## {u} ERR {e}")
 open("pricewatch/probe.txt", "w").write("\n".join(out) + "\n")
-print("\n".join(out))
