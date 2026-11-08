@@ -14,7 +14,10 @@
    "low_czk": 4259,
    "trend_czk": 7024,
    "my_czk": 8999.0,
-   "diff_vs_trend_pct": 28.1
+   "diff_vs_trend_pct": 28.1,
+   "comp_min_czk": "",
+   "comp_min_shop": "",
+   "comp_instock_count": 0
   },
   {
    "date": "2026-11-08",
@@ -28,7 +31,10 @@
    "low_czk": 413,
    "trend_czk": 566,
    "my_czk": 749.0,
-   "diff_vs_trend_pct": 32.3
+   "diff_vs_trend_pct": 32.3,
+   "comp_min_czk": "",
+   "comp_min_shop": "",
+   "comp_instock_count": 0
   },
   {
    "date": "2026-11-08",
@@ -42,9 +48,33 @@
    "low_czk": 1461,
    "trend_czk": 2021,
    "my_czk": 1940.0,
-   "diff_vs_trend_pct": -4.0
+   "diff_vs_trend_pct": -4.0,
+   "comp_min_czk": 1699.0,
+   "comp_min_shop": "Pokeshop",
+   "comp_instock_count": 1
   }
  ],
- "alerts": [],
+ "alerts": [
+  "30th Celebration Figure Collection – Mewtwo (EN): Pokeshop má skladem za 1 699 Kč, já 1 940 Kč (-12 %)"
+ ],
+ "competitors": {
+  "EN-DRI-BB": [],
+  "EN-30TH-2PB": [
+   {
+    "shop": "Cardstore",
+    "url": "https://www.cardstore.cz/pokemon-tcg--30th-celebration-2-pack-blister/",
+    "price": 649.0,
+    "availability": null
+   }
+  ],
+  "EN-30TH-FIG-B": [
+   {
+    "shop": "Pokeshop",
+    "url": "https://www.pokeshop.cz/pokemon-tcg--30th-celebration-figure-collection-mewtwo/",
+    "price": 1699.0,
+    "availability": "InStock"
+   }
+  ]
+ },
  "unresolved": []
 }

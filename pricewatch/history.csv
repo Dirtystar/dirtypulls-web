@@ -1,4 +1,4 @@
-date,code,name,cm_id,cm_name,low_eur,trend_eur,avg7_eur,low_czk,trend_czk,my_czk,diff_vs_trend_pct
-2026-11-08,EN-DRI-BB,Destined Rivals Booster Box (EN),818574,Destined Rivals Booster Box,174.95,288.53,,4259,7024,8999.0,28.1
-2026-11-08,EN-30TH-2PB,30th Celebration 2-Pack Blister – Eevee (EN),895556,30th Celebration: Eevee 2-Pack Blister,16.98,23.23,,413,566,749.0,32.3
-2026-11-08,EN-30TH-FIG-B,30th Celebration Figure Collection – Mewtwo (EN),895575,30th Celebration: Mewtwo Figure Collection,60,83.02,,1461,2021,1940.0,-4.0
+date,code,name,cm_id,cm_name,low_eur,trend_eur,avg7_eur,low_czk,trend_czk,my_czk,diff_vs_trend_pct,comp_min_czk,comp_min_shop,comp_instock_count
+2026-11-08,EN-DRI-BB,Destined Rivals Booster Box (EN),818574,Destined Rivals Booster Box,174.95,288.53,,4259,7024,8999.0,28.1,,,0
+2026-11-08,EN-30TH-2PB,30th Celebration 2-Pack Blister – Eevee (EN),895556,30th Celebration: Eevee 2-Pack Blister,16.98,23.23,,413,566,749.0,32.3,,,0
+2026-11-08,EN-30TH-FIG-B,30th Celebration Figure Collection – Mewtwo (EN),895575,30th Celebration: Mewtwo Figure Collection,60,83.02,,1461,2021,1940.0,-4.0,1699.0,Pokeshop,1
