@@ -16,10 +16,9 @@
         "display case",
         "japanese"
       ],
-      "comp_query": "destined rivals booster box",
+      "comp_query": "destined rivals",
       "comp_match": [
-        "destined rivals",
-        "box"
+        "destined rivals"
       ],
       "comp_exclude": [
         "case",
@@ -31,8 +30,11 @@
         "bundle",
         "3-pack",
         "blister",
-        "tin"
-      ]
+        "tin",
+        "sleeved",
+        "japan"
+      ],
+      "comp_min_price": 3000
     },
     {
       "code": "EN-30TH-2PB",
@@ -55,7 +57,8 @@
         "case",
         "coin",
         "mince"
-      ]
+      ],
+      "comp_min_price": 300
     },
     {
       "code": "EN-30TH-FIG-B",
@@ -77,7 +80,8 @@
       "comp_exclude": [
         "case",
         "tin"
-      ]
+      ],
+      "comp_min_price": 900
     }
   ]
 }

@@ -105,11 +105,13 @@ def competitors(p, shops):
             if url in seen or not url.startswith(base):
                 continue
             seen.append(url)
-            if len(seen) > 4:
+            if len(seen) > 7:
                 break
         for url in seen:
             time.sleep(1)
             price, av = page_offer(url)
+            if price and price < p.get("comp_min_price", 0):
+                continue
             offers.append({"shop": s["name"], "url": url, "price": price, "availability": av})
     return offers
 
