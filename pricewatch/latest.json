@@ -6,49 +6,45 @@
    "date": "2026-11-08",
    "code": "EN-DRI-BB",
    "name": "Destined Rivals Booster Box (EN)",
-   "cm_id": "",
-   "cm_name": "",
-   "low_eur": "",
-   "trend_eur": "",
+   "cm_id": 818574,
+   "cm_name": "Destined Rivals Booster Box",
+   "low_eur": 174.95,
+   "trend_eur": 288.53,
    "avg7_eur": "",
-   "low_czk": "",
-   "trend_czk": "",
+   "low_czk": 4259,
+   "trend_czk": 7024,
    "my_czk": 8999.0,
-   "diff_vs_trend_pct": ""
+   "diff_vs_trend_pct": 28.1
   },
   {
    "date": "2026-11-08",
-   "code": "EN-30TH-2PK",
-   "name": "30th Celebration 2-Pack Blister (EN)",
-   "cm_id": "",
-   "cm_name": "",
-   "low_eur": "",
-   "trend_eur": "",
+   "code": "EN-30TH-2PB",
+   "name": "30th Celebration 2-Pack Blister – Eevee (EN)",
+   "cm_id": 895556,
+   "cm_name": "30th Celebration: Eevee 2-Pack Blister",
+   "low_eur": 16.98,
+   "trend_eur": 23.23,
    "avg7_eur": "",
-   "low_czk": "",
-   "trend_czk": "",
+   "low_czk": 413,
+   "trend_czk": 566,
    "my_czk": 749.0,
-   "diff_vs_trend_pct": ""
+   "diff_vs_trend_pct": 32.3
   },
   {
    "date": "2026-11-08",
    "code": "EN-30TH-FIG-B",
    "name": "30th Celebration Figure Collection – Mewtwo (EN)",
-   "cm_id": "",
-   "cm_name": "",
-   "low_eur": "",
-   "trend_eur": "",
+   "cm_id": 895575,
+   "cm_name": "30th Celebration: Mewtwo Figure Collection",
+   "low_eur": 60,
+   "trend_eur": 83.02,
    "avg7_eur": "",
-   "low_czk": "",
-   "trend_czk": "",
+   "low_czk": 1461,
+   "trend_czk": 2021,
    "my_czk": 1940.0,
-   "diff_vs_trend_pct": ""
+   "diff_vs_trend_pct": -4.0
   }
  ],
  "alerts": [],
- "unresolved": [
-  "EN-DRI-BB",
-  "EN-30TH-2PK",
-  "EN-30TH-FIG-B"
- ]
+ "unresolved": []
 }
