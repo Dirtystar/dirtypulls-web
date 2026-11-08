@@ -77,8 +77,8 @@ def main():
 
     rows, report, alerts = [], [], []
     report.append(f"# Pricewatch – {today}\n")
-    report.append(f"Kurz ČNB: 1 EUR = {rate:.3f} Kč · Cardmarket guide z {guide.get('createdAt','?')}\n")
-    report.append("| Produkt | Můj e-shop | CM low | CM trend | CM avg 7d | Rozdíl vs trend |")
+    report.append(f"Kurz ČNB: 1 EUR = {rate:.3f} Kč · Cardmarket guide z {guide.get('createdAt','?')} · POZOR: low/trend jsou napříč jazyky (EN/DE/FR…), ne jen EN\n")
+    report.append("| Produkt | Můj e-shop | CM low (všechny jazyky) | CM trend (všechny jazyky) | CM avg 7d | Rozdíl vs trend |")
     report.append("|---|---:|---:|---:|---:|---:|")
     candidates = []
 
