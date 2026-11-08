@@ -1,0 +1,27 @@
+name: pricewatch
+on:
+  schedule:
+    - cron: "17 5 * * *"   # denně ~6:17 SEČ (po aktualizaci Cardmarket guide)
+  workflow_dispatch:
+  push:
+    paths:
+      - "pricewatch/products.json"
+      - "pricewatch/watch.py"
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python pricewatch/watch.py
+      - name: Commit výsledků
+        run: |
+          git config user.name "pricewatch-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add pricewatch/history.csv pricewatch/latest.json pricewatch/report.md
+          git diff --cached --quiet || git commit -m "pricewatch $(date -u +%F)"
+          git pull --rebase && git push

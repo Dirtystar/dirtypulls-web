@@ -1,0 +1,30 @@
+{
+  "_info": "Sledované produkty Dirtypulls. cm_id = idProduct na Cardmarketu (když chybí, skript najde kandidáty podle cm_match a vypíše je do report.md). Nákupní ceny sem NEPATŘÍ – repo je veřejné.",
+  "alert_pct": 5,
+  "products": [
+    {
+      "code": "EN-DRI-BB",
+      "name": "Destined Rivals Booster Box (EN)",
+      "shop_url": "https://827216.myshoptet.com/destined-rivals-booster-box-en/",
+      "cm_id": null,
+      "cm_match": ["destined rivals", "booster box"],
+      "cm_exclude": ["case", "display case", "japanese"]
+    },
+    {
+      "code": "EN-30TH-2PK",
+      "name": "30th Celebration 2-Pack Blister (EN)",
+      "shop_url": "https://827216.myshoptet.com/30th-celebration-2-pack-blister-en/",
+      "cm_id": null,
+      "cm_match": ["30th", "blister"],
+      "cm_exclude": ["case"]
+    },
+    {
+      "code": "EN-30TH-FIG-B",
+      "name": "30th Celebration Figure Collection – Mewtwo (EN)",
+      "shop_url": "https://827216.myshoptet.com/30th-celebration-figure-collection-mewtwo-en/",
+      "cm_id": null,
+      "cm_match": ["30th", "mewtwo"],
+      "cm_exclude": ["case"]
+    }
+  ]
+}
