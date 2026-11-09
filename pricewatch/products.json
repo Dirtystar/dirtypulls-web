@@ -1,5 +1,5 @@
 {
-  "_info": "Sledované produkty Dirtypulls. cm_id = idProduct na Cardmarketu (když chybí, skript najde kandidáty podle cm_match a vypíše je do report.md). Nákupní ceny sem NEPATŘÍ – repo je veřejné.",
+  "_info": "Sledované produkty Dirtypulls. cm_id = idProduct na Cardmarketu (když chybí, skript najde kandidáty podle cm_match a vypíše je do report.md). Nákupní ceny sem NEPATŘÍ – repo je veřejné. ",
   "alert_pct": 5,
   "products": [
     {
