@@ -4,7 +4,7 @@
  ],
  "prev_alerts": [],
  "date": "2026-11-09",
- "eur_czk": 24.345,
+ "eur_czk": 24.36,
  "rows": [
   {
    "date": "2026-11-09",
@@ -15,10 +15,10 @@
    "low_eur": 174.95,
    "trend_eur": 292.1,
    "avg7_eur": "",
-   "low_czk": 4259,
-   "trend_czk": 7111,
+   "low_czk": 4262,
+   "trend_czk": 7116,
    "my_czk": 8999.0,
-   "diff_vs_trend_pct": 26.6,
+   "diff_vs_trend_pct": 26.5,
    "comp_min_czk": "",
    "comp_min_shop": "",
    "comp_instock_count": 0
@@ -33,9 +33,9 @@
    "trend_eur": 22.44,
    "avg7_eur": "",
    "low_czk": 414,
-   "trend_czk": 546,
+   "trend_czk": 547,
    "my_czk": 749.0,
-   "diff_vs_trend_pct": 37.2,
+   "diff_vs_trend_pct": 36.9,
    "comp_min_czk": "",
    "comp_min_shop": "",
    "comp_instock_count": 0
@@ -49,10 +49,10 @@
    "low_eur": 47,
    "trend_eur": 74.62,
    "avg7_eur": "",
-   "low_czk": 1144,
-   "trend_czk": 1817,
+   "low_czk": 1145,
+   "trend_czk": 1818,
    "my_czk": 1740.0,
-   "diff_vs_trend_pct": -4.2,
+   "diff_vs_trend_pct": -4.3,
    "comp_min_czk": 1699.0,
    "comp_min_shop": "Pokeshop",
    "comp_instock_count": 1
