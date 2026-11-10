@@ -1,4 +1,4 @@
-# Pricewatch – 2026-11-09
+# Pricewatch – 2026-11-10
 
 Kurz ČNB: 1 EUR = 24.360 Kč · Cardmarket guide z 2026-11-09T02:50:26+0100 · POZOR: low/trend jsou napříč jazyky (EN/DE/FR…), ne jen EN
 
@@ -17,8 +17,5 @@ Kurz ČNB: 1 EUR = 24.360 Kč · Cardmarket guide z 2026-11-09T02:50:26+0100 · 
 - Cardstore: 649 Kč – ✖ OutOfStock – https://www.cardstore.cz/pokemon-tcg--30th-celebration-2-pack-blister/
 
 **30th Celebration Figure Collection – Mewtwo (EN)**
-- Pokeshop: 1 699 Kč – ✅ skladem – https://www.pokeshop.cz/pokemon-tcg--30th-celebration-figure-collection-mewtwo/
+- Pokeshop: 1 699 Kč – ✖ OutOfStock – https://www.pokeshop.cz/pokemon-tcg--30th-celebration-figure-collection-mewtwo/
 
-
-## Upozornění
-- 30th Celebration Figure Collection – Mewtwo (EN): CM trend -10.1 % (83.02 → 74.62 €)
