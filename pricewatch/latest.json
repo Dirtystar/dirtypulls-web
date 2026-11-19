@@ -1,62 +1,66 @@
 {
- "new_alerts": [],
+ "new_alerts": [
+  "30th Celebration Figure Collection – Mewtwo (EN): CM trend -7.8 % (57.10 → 52.64 €)"
+ ],
  "prev_alerts": [],
- "date": "2026-11-18",
- "eur_czk": 24.385,
+ "date": "2026-11-19",
+ "eur_czk": 24.425,
  "rows": [
   {
-   "date": "2026-11-18",
+   "date": "2026-11-19",
    "code": "EN-DRI-BB",
    "name": "Destined Rivals Booster Box (EN)",
    "cm_id": 818574,
    "cm_name": "Destined Rivals Booster Box",
    "low_eur": 175,
-   "trend_eur": 284.76,
+   "trend_eur": 286.07,
    "avg7_eur": "",
-   "low_czk": 4267,
-   "trend_czk": 6944,
+   "low_czk": 4274,
+   "trend_czk": 6987,
    "my_czk": 8999.0,
-   "diff_vs_trend_pct": 29.6,
+   "diff_vs_trend_pct": 28.8,
    "comp_min_czk": "",
    "comp_min_shop": "",
    "comp_instock_count": 0
   },
   {
-   "date": "2026-11-18",
+   "date": "2026-11-19",
    "code": "EN-30TH-2PB",
    "name": "30th Celebration 2-Pack Blister – Eevee (EN)",
    "cm_id": 895556,
    "cm_name": "30th Celebration: Eevee 2-Pack Blister",
    "low_eur": 17.9,
-   "trend_eur": 22.52,
+   "trend_eur": 22.24,
    "avg7_eur": "",
-   "low_czk": 436,
-   "trend_czk": 549,
+   "low_czk": 437,
+   "trend_czk": 543,
    "my_czk": 749.0,
-   "diff_vs_trend_pct": 36.4,
+   "diff_vs_trend_pct": 37.9,
    "comp_min_czk": "",
    "comp_min_shop": "",
    "comp_instock_count": 0
   },
   {
-   "date": "2026-11-18",
+   "date": "2026-11-19",
    "code": "EN-30TH-FIG-B",
    "name": "30th Celebration Figure Collection – Mewtwo (EN)",
    "cm_id": 895575,
    "cm_name": "30th Celebration: Mewtwo Figure Collection",
    "low_eur": 19.99,
-   "trend_eur": 57.1,
+   "trend_eur": 52.64,
    "avg7_eur": "",
-   "low_czk": 487,
-   "trend_czk": 1392,
+   "low_czk": 488,
+   "trend_czk": 1286,
    "my_czk": 1740.0,
-   "diff_vs_trend_pct": 25.0,
-   "comp_min_czk": "",
-   "comp_min_shop": "",
-   "comp_instock_count": 0
+   "diff_vs_trend_pct": 35.3,
+   "comp_min_czk": 1699.0,
+   "comp_min_shop": "Pokeshop",
+   "comp_instock_count": 1
   }
  ],
- "alerts": [],
+ "alerts": [
+  "30th Celebration Figure Collection – Mewtwo (EN): CM trend -7.8 % (57.10 → 52.64 €)"
+ ],
  "competitors": {
   "EN-DRI-BB": [],
   "EN-30TH-2PB": [
@@ -72,7 +76,7 @@
     "shop": "Pokeshop",
     "url": "https://www.pokeshop.cz/pokemon-tcg--30th-celebration-figure-collection-mewtwo/",
     "price": 1699.0,
-    "availability": "OutOfStock"
+    "availability": "InStock"
    }
   ]
  },
