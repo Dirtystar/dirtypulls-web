@@ -1,12 +1,12 @@
-# Pricewatch – 2026-11-19
+# Pricewatch – 2026-11-20
 
-Kurz ČNB: 1 EUR = 24.425 Kč · Cardmarket guide z 2026-11-19T02:48:38+0100 · POZOR: low/trend jsou napříč jazyky (EN/DE/FR…), ne jen EN
+Kurz ČNB: 1 EUR = 24.470 Kč · Cardmarket guide z 2026-11-20T02:43:56+0100 · POZOR: low/trend jsou napříč jazyky (EN/DE/FR…), ne jen EN
 
 | Produkt | Můj e-shop | CM low (všechny jazyky) | CM trend (všechny jazyky) | CM avg 7d | Rozdíl vs trend |
 |---|---:|---:|---:|---:|---:|
-| Destined Rivals Booster Box (EN) | 8 999 Kč | 4 274 Kč | 6 987 Kč | – | +29 % |
-| 30th Celebration 2-Pack Blister – Eevee (EN) | 749 Kč | 437 Kč | 543 Kč | – | +38 % |
-| 30th Celebration Figure Collection – Mewtwo (EN) | 1 740 Kč | 488 Kč | 1 286 Kč | – | +35 % |
+| Destined Rivals Booster Box (EN) | 8 999 Kč | 4 282 Kč | 7 057 Kč | – | +28 % |
+| 30th Celebration 2-Pack Blister – Eevee (EN) | 749 Kč | 423 Kč | 535 Kč | – | +40 % |
+| 30th Celebration Figure Collection – Mewtwo (EN) | 1 740 Kč | 244 Kč | 1 254 Kč | – | +39 % |
 
 ## Konkurence (jen skladem)
 
@@ -19,6 +19,3 @@ Kurz ČNB: 1 EUR = 24.425 Kč · Cardmarket guide z 2026-11-19T02:48:38+0100 · 
 **30th Celebration Figure Collection – Mewtwo (EN)**
 - Pokeshop: 1 699 Kč – ✅ skladem – https://www.pokeshop.cz/pokemon-tcg--30th-celebration-figure-collection-mewtwo/
 
-
-## Upozornění
-- 30th Celebration Figure Collection – Mewtwo (EN): CM trend -7.8 % (57.10 → 52.64 €)
