@@ -1,27 +1,34 @@
 {
  "_info": "Zdroj pravdy pro Kalendář novinek (článek Shoptet id 11, /radce/kalendar-novinek-2027/). status: official = datum potvrdil vydavatel + aspoň 2 nezávislé zdroje; unofficial = únik/neshoda zdrojů; window = jen období. article = id článku o releasu v Shoptetu (null = zatím nevyšel). render.py z toho kreslí kalendar-novinek-<year>.png.",
  "year": 2027,
- "updated": "2026-11-17",
+ "updated": "2026-11-20",
  "shoptet_calendar_article_id": 11,
  "events": [
   {
    "game": "pokemon",
    "name": "Flowing Fists",
-   "date": "2027-02-05",
-   "label": "únor · neoficiálně 5. 2.",
-   "status": "unofficial",
-   "products": [],
+   "date": "2027-02-06",
+   "label": "6. 2.",
+   "status": "official",
+   "products": [
+    "Elite Trainer Box",
+    "Build & Battle Box",
+    "3-Booster Blister",
+    "Booster Display",
+    "Hanger Booster Pack"
+   ],
    "missing": [
-    "oficiální potvrzení data od The Pokémon Company (zatím jen PokéBeach/únik)",
-    "seznam produktů",
-    "obsah produktů"
+    "obsah produktů (počet balíčků, karet v balíčku, promo, příslušenství) – ICv2 ani Serebii zatím neuvádějí, oficiální stránka nepřečtena",
+    "2. nezávislý zdroj k seznamu produktů (zatím jen ICv2 + PokéBeach titulek)"
    ],
    "article": null,
    "sources": [
-    "https://www.wargamer.com/pokemon-trading-card-game/flowing-fists",
-    "https://billsarchive.com/flowing-fists.html",
-    "https://www.setpulls.com/blog/pokemon-tcg-release-dates-2026-2027"
-   ]
+    "https://www.pokemon.com/us/news/the-pokemon-tcg-mega-evolution-flowing-fists-expansion-arrives-february-6-2027",
+    "https://icv2.com/articles/news/view/63927/the-pokemon-company-announced-mega-evolution-flowing-fists",
+    "https://www.serebii.net/news/2026/November.shtml",
+    "https://www.pokebeach.com/2026/11/flowing-fists-tcg-set-officially-revealed-for-february-full-product-lineup-revealed"
+   ],
+   "full_name": "Mega Evolution—Flowing Fists"
   },
   {
    "game": "magic",
