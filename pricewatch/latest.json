@@ -1,13 +1,11 @@
 {
  "new_alerts": [],
- "prev_alerts": [
-  "30th Celebration Figure Collection – Mewtwo (EN): CM trend -7.8 % (57.10 → 52.64 €)"
- ],
- "date": "2026-11-20",
+ "prev_alerts": [],
+ "date": "2026-11-21",
  "eur_czk": 24.47,
  "rows": [
   {
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "code": "EN-DRI-BB",
    "name": "Destined Rivals Booster Box (EN)",
    "cm_id": 818574,
@@ -24,7 +22,7 @@
    "comp_instock_count": 0
   },
   {
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "code": "EN-30TH-2PB",
    "name": "30th Celebration 2-Pack Blister – Eevee (EN)",
    "cm_id": 895556,
@@ -41,7 +39,7 @@
    "comp_instock_count": 0
   },
   {
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "code": "EN-30TH-FIG-B",
    "name": "30th Celebration Figure Collection – Mewtwo (EN)",
    "cm_id": 895575,

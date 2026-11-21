@@ -1,4 +1,4 @@
-# Pricewatch – 2026-11-20
+# Pricewatch – 2026-11-21
 
 Kurz ČNB: 1 EUR = 24.470 Kč · Cardmarket guide z 2026-11-20T02:43:56+0100 · POZOR: low/trend jsou napříč jazyky (EN/DE/FR…), ne jen EN
 
