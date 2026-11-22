@@ -1,12 +1,12 @@
-# Pricewatch – 2026-11-21
+# Pricewatch – 2026-11-22
 
-Kurz ČNB: 1 EUR = 24.470 Kč · Cardmarket guide z 2026-11-20T02:43:56+0100 · POZOR: low/trend jsou napříč jazyky (EN/DE/FR…), ne jen EN
+Kurz ČNB: 1 EUR = 24.470 Kč · Cardmarket guide z 2026-11-22T02:43:59+0100 · POZOR: low/trend jsou napříč jazyky (EN/DE/FR…), ne jen EN
 
 | Produkt | Můj e-shop | CM low (všechny jazyky) | CM trend (všechny jazyky) | CM avg 7d | Rozdíl vs trend |
 |---|---:|---:|---:|---:|---:|
-| Destined Rivals Booster Box (EN) | 8 999 Kč | 4 282 Kč | 7 057 Kč | – | +28 % |
-| 30th Celebration 2-Pack Blister – Eevee (EN) | 749 Kč | 423 Kč | 535 Kč | – | +40 % |
-| 30th Celebration Figure Collection – Mewtwo (EN) | 1 740 Kč | 244 Kč | 1 254 Kč | – | +39 % |
+| Destined Rivals Booster Box (EN) | 8 999 Kč | 4 404 Kč | 6 991 Kč | – | +29 % |
+| 30th Celebration 2-Pack Blister – Eevee (EN) | 749 Kč | 423 Kč | 519 Kč | – | +44 % |
+| 30th Celebration Figure Collection – Mewtwo (EN) | 1 740 Kč | 244 Kč | 1 198 Kč | – | +45 % |
 
 ## Konkurence (jen skladem)
 
