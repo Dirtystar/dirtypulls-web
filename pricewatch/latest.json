@@ -1,80 +1,66 @@
 {
  "new_alerts": [],
  "prev_alerts": [],
- "date": "2026-11-23",
- "eur_czk": 24.455,
+ "date": "2026-11-24",
+ "eur_czk": 24.43,
  "rows": [
   {
-   "date": "2026-11-23",
+   "date": "2026-11-24",
    "code": "EN-DRI-BB",
    "name": "Destined Rivals Booster Box (EN)",
    "cm_id": 818574,
    "cm_name": "Destined Rivals Booster Box",
-   "low_eur": 179.99,
-   "trend_eur": 285.68,
+   "low_eur": 175,
+   "trend_eur": 275.81,
    "avg7_eur": "",
-   "low_czk": 4402,
-   "trend_czk": 6986,
-   "my_czk": 8999.0,
-   "diff_vs_trend_pct": 28.8,
+   "low_czk": 4275,
+   "trend_czk": 6738,
+   "my_czk": "",
+   "diff_vs_trend_pct": "",
    "comp_min_czk": "",
    "comp_min_shop": "",
    "comp_instock_count": 0
   },
   {
-   "date": "2026-11-23",
+   "date": "2026-11-24",
    "code": "EN-30TH-2PB",
    "name": "30th Celebration 2-Pack Blister – Eevee (EN)",
    "cm_id": 895556,
    "cm_name": "30th Celebration: Eevee 2-Pack Blister",
    "low_eur": 17,
-   "trend_eur": 20.68,
+   "trend_eur": 20.59,
    "avg7_eur": "",
-   "low_czk": 416,
-   "trend_czk": 506,
-   "my_czk": 749.0,
-   "diff_vs_trend_pct": 48.0,
+   "low_czk": 415,
+   "trend_czk": 503,
+   "my_czk": "",
+   "diff_vs_trend_pct": "",
    "comp_min_czk": "",
    "comp_min_shop": "",
    "comp_instock_count": 0
   },
   {
-   "date": "2026-11-23",
+   "date": "2026-11-24",
    "code": "EN-30TH-FIG-B",
    "name": "30th Celebration Figure Collection – Mewtwo (EN)",
    "cm_id": 895575,
    "cm_name": "30th Celebration: Mewtwo Figure Collection",
    "low_eur": 1.95,
-   "trend_eur": 48.23,
+   "trend_eur": 46.5,
    "avg7_eur": "",
    "low_czk": 48,
-   "trend_czk": 1179,
-   "my_czk": 1740.0,
-   "diff_vs_trend_pct": 47.6,
-   "comp_min_czk": 1699.0,
-   "comp_min_shop": "Pokeshop",
-   "comp_instock_count": 1
+   "trend_czk": 1136,
+   "my_czk": "",
+   "diff_vs_trend_pct": "",
+   "comp_min_czk": "",
+   "comp_min_shop": "",
+   "comp_instock_count": 0
   }
  ],
  "alerts": [],
  "competitors": {
   "EN-DRI-BB": [],
-  "EN-30TH-2PB": [
-   {
-    "shop": "Cardstore",
-    "url": "https://www.cardstore.cz/pokemon-tcg--30th-celebration-2-pack-blister/",
-    "price": 649.0,
-    "availability": "OutOfStock"
-   }
-  ],
-  "EN-30TH-FIG-B": [
-   {
-    "shop": "Pokeshop",
-    "url": "https://www.pokeshop.cz/pokemon-tcg--30th-celebration-figure-collection-mewtwo/",
-    "price": 1699.0,
-    "availability": "InStock"
-   }
-  ]
+  "EN-30TH-2PB": [],
+  "EN-30TH-FIG-B": []
  },
  "unresolved": []
 }
