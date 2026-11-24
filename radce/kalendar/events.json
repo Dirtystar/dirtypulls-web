@@ -1,7 +1,7 @@
 {
  "_info": "Zdroj pravdy pro Kalendář novinek (článek Shoptet id 11, /radce/kalendar-novinek-2027/). status: official = datum potvrdil vydavatel + aspoň 2 nezávislé zdroje; unofficial = únik/neshoda zdrojů; window = jen období. article = id článku o releasu v Shoptetu (null = zatím nevyšel). render.py z toho kreslí kalendar-novinek-<year>.png.",
  "year": 2027,
- "updated": "2026-11-20",
+ "updated": "2026-11-24",
  "shoptet_calendar_article_id": 11,
  "events": [
   {
@@ -12,21 +12,28 @@
    "status": "official",
    "products": [
     "Elite Trainer Box",
+    "Pokémon Center Elite Trainer Box",
+    "Booster Display (36 balíčků)",
+    "Booster Bundle (6 balíčků)",
     "Build & Battle Box",
-    "3-Booster Blister",
-    "Booster Display",
+    "3-Booster Blister (promo Wimpod)",
+    "1-Booster Blister (promo Tynamo)",
     "Hanger Booster Pack"
    ],
    "missing": [
-    "obsah produktů (počet balíčků, karet v balíčku, promo, příslušenství) – ICv2 ani Serebii zatím neuvádějí, oficiální stránka nepřečtena",
-    "2. nezávislý zdroj k seznamu produktů (zatím jen ICv2 + PokéBeach titulek)"
+    "oficiální obsah produktů (ETB, Build & Battle Box, blistry: balíčky, promo, příslušenství) – zatím jen PokéGuardian/Coded Yellow, oficiální stránka v tomto běhu nedostupná",
+    "potvrzení počtu karet v balíčku (10 jen podle PokéGuardian) a promo karet v blistrech druhým zdrojem / vydavatelem",
+    "Hanger Booster Pack – PokéGuardian ani Coded Yellow ho neuvádějí, ověřit"
    ],
    "article": null,
    "sources": [
     "https://www.pokemon.com/us/news/the-pokemon-tcg-mega-evolution-flowing-fists-expansion-arrives-february-6-2027",
     "https://icv2.com/articles/news/view/63927/the-pokemon-company-announced-mega-evolution-flowing-fists",
     "https://www.serebii.net/news/2026/November.shtml",
-    "https://www.pokebeach.com/2026/11/flowing-fists-tcg-set-officially-revealed-for-february-full-product-lineup-revealed"
+    "https://www.pokebeach.com/2026/11/flowing-fists-tcg-set-officially-revealed-for-february-full-product-lineup-revealed",
+    "https://www.pokeguardian.com/3456480_pokemon-tcg-mega-evolution-flowing-fists-revealed",
+    "https://www.codedyellow.com/pokemon-tcg-products-revealed-for-2027/",
+    "https://www.wargamer.com/pokemon-trading-card-game/flowing-fists"
    ],
    "full_name": "Mega Evolution—Flowing Fists"
   },
@@ -76,7 +83,8 @@
     "Collector's Edition Commander Deck"
    ],
    "missing": [
-    "obsah produktů (karty v Booster Packu/Collector Boosteru, balíčky v displejích, Draft Night, Commander decky)",
+    "obsah produktů od Wizards (Collector Booster 12 karet + art card/foil token a Play Booster 14 karet zatím jen podle obchodů Miniature Market / Total Cards)",
+    "počet balíčků v Play Booster displeji, obsah Draft Night, Scene Boxů a Commander decků",
     "datum Arcanum Bundlu – zdroje se liší (9. 4. vs. 30. 4.)",
     "2. nezávislý zdroj k obsahu Bundlu a Arcanum Bundlu"
    ],
@@ -165,13 +173,14 @@
    "status": "official",
    "products": [],
    "missing": [
-    "oficiální obsah produktů (Illumineer's Trove, Booster Display, Prerelease Kit; Collector Booster = 12 karet jen podle ICv2)",
-    "potvrzení obsahu od Ravensburgeru"
+    "obsah Illumineer's Trove, Booster Displaye a Prerelease Kitu (počet balíčků, karet v balíčku, příslušenství)",
+    "potvrzení data 12. 2. přímo od Ravensburgeru / disneylorcana.com (ten zatím uvádí jen Q1 2027; 12. 2. podle ICv2)"
    ],
    "article": null,
    "sources": [
     "https://icv2.com/articles/news/view/63708/disney-lorcana-into-inkdark-hits-preorder",
-    "https://www.shonentcg.com/blog/disney-lorcana-into-the-inkdark-set-15-preview"
+    "https://www.shonentcg.com/blog/disney-lorcana-into-the-inkdark-set-15-preview",
+    "https://www.disneylorcana.com/en-US/news/2026/08/d23-announcements"
    ]
   },
   {
