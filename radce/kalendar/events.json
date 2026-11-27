@@ -1,7 +1,7 @@
 {
  "_info": "Zdroj pravdy pro Kalendář novinek (článek Shoptet id 11, /radce/kalendar-novinek-2027/). status: official = datum potvrdil vydavatel + aspoň 2 nezávislé zdroje; unofficial = únik/neshoda zdrojů; window = jen období. article = id článku o releasu v Shoptetu (null = zatím nevyšel). render.py z toho kreslí kalendar-novinek-<year>.png.",
  "year": 2027,
- "updated": "2026-11-24",
+ "updated": "2026-11-27",
  "shoptet_calendar_article_id": 11,
  "events": [
   {
@@ -110,6 +110,7 @@
    ],
    "article": null,
    "sources": [
+    "https://magic.wizards.com/es/products/kamigawa-titanbreach",
     "https://icv2.com/articles/news/view/63731/magic-the-gathering-2027-product-release-calendar",
     "https://turnzerohq.com/sets/2027-sets"
    ]
